@@ -1,0 +1,111 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+}
+
+#main-div {
+  width: 1000px;
+  height: 550px;
+  background-image: url("https://images.unsplash.com/photo-1483137140003-ae073b395549?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  margin: 20px auto;
+}
+
+#calculator-div {
+  width: 320px;
+  height: 520px;
+  background: #eaedef;
+  /*  align verticly center */
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#result {
+  height: 120px;
+}
+
+#history {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #919191;
+}
+#output {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  font-size: 30px;
+}
+
+#keyboard {
+  height: 400px;
+}
+
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.number,
+.empty {
+  background: #eaedef;
+}
+
+.number,
+.operator {
+  cursor: pointer;
+}
+.operator:active,
+.number:active {
+  font-size: 13px;
+}
+.operator {
+  background-color: #919191;
+}
+
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: 0;
+}
+
+button:nth-child(4) {
+  font-size: 20px;
+  background-color: #b22020;
+  color: #edf8f8;
+}
+
+button:nth-child(8) {
+  font-size: 20px;
+  background-color: #edf8f8;
+ 
+}
+
+button:nth-child(12) {
+  font-size: 20px;
+  background-color: #102ea6;
+  color: #edf8f8;
+}
+
+button:nth-child(16) {
+  font-size: 20px;
+  background-color: #edf8f8;
+}
+
+button:nth-child(20){
+    font-size: 20px;
+    background-color: #13bb21;
+    color: #edf8f8;
+}
