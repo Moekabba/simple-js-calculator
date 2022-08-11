@@ -70,9 +70,11 @@ for (let index = 0; index < operatore.length; index++) {
 
       // ---------------------------
       // make sure output is not empty (if output empty, operator sholudnt work)
-    //   add  || history so if output or history is not empty then the condition
-      if (output != "") {
-        output = reverseOutPutValue(output);
+    //   add  || history so if output or history is not empty then the condition meets
+      if (output != ""|| history != "") {
+        //   use tanri  ? to see both cases
+        output = output ==""?
+        output:reverseOutPutValue(output);
         history = history + output;
         if (this.id == "=") {
           var result = eval(history);
